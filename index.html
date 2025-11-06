@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulačka povrchu a objemu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Kalkulačka povrchu a objemu (v metrech)</h1>
+
+    <div class="tabs">
+        <button id="btnKrychle" class="active">Krychle</button>
+        <button id="btnKvadr">Kvádr</button>
+    </div>
+
+    <div id="krychleDiv">
+        <h2>Krychle</h2>
+        <label>a:</label>
+        <input type="number" id="a" placeholder="Délka hrany v metrech" min="0">
+        <br>
+        <button id="vypocetKrychle">Vypočítej</button>
+        <button id="vycistiKrychle">Vyčisti</button>
+    </div>
+
+    <div id="kvadrDiv" style="display: none;">
+        <h2>Kvádr</h2>
+        <label>a:</label>
+        <input type="number" id="aKvadr" min="0">
+        <label>b:</label>
+        <input type="number" id="bKvadr" min="0">
+        <label>c:</label>
+        <input type="number" id="cKvadr" min="0">
+        <br>
+        <button id="vypocetKvadr">Vypočítej</button>
+        <button id="vycistiKvadr">Vyčisti</button>
+    </div>
+
+    <div id="vysledky">
+        <h3>Výsledky</h3>
+        <p id="povrch">Povrch: —</p>
+        <p id="objem">Objem: —</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
